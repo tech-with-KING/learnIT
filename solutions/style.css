@@ -1,12 +1,8 @@
+
 .home_{
-    margin-top: 100px;
-    background-color: aqua;
-    height: inherit;
-}
-.home_question{
-    width: 100%;
-    background-color: white;
-    margin-top: 10px;
+    width: 90%;
+    background-color: rgb(216, 211, 211);
+    margin-top: 90px;
     height: inherit;
     border-left: 2px solid rgb(211, 209, 209);
     border-right: 1px solid rgb(192, 190, 190);
@@ -16,10 +12,11 @@
 
 .solution{
     height: inherit;
-    width: 100%;
-    border-bottom: 4px solid black;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(51, 48, 48);
+    margin: 10px;
 }
 
 .question_asked{
@@ -38,24 +35,27 @@
     letter-spacing: 1px;
     
 }
+ 
+    
+
 .answer{
     height: inherit;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     align-self: center;
     flex-direction: column;
-    background-color: white;
+    background-color: transparent;
+    padding-left: 10px;
 }
 
 .answer .p{
-    width: 90%;
+    width: 70%;
     height: inherit;
-    background-color: rgb(214, 212, 212);
+    background-color: rgb(148, 194, 173);
     font-weight: bold;
     margin: 5px;
     font-size: 15px;
-    margin-top: 5px;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -63,21 +63,14 @@
     border-radius: 5px;
 }
 
-.answer .p div{
-    height: 30px;
-    width: 30px;
-    min-width: 25px;
-    color: white;
-    border-radius: 50%; margin: 10px;
-    background-color: white;
-}
+
 
 
 @media (min-width: 650px){
-    .home_question{
+    .home_{
         width: 90%;
-        background-color: white;
-        margin-top: 10px;
+        background-color: rgb(117, 117, 117);
+        margin-top: 90px;
         height: inherit;
         border-left: 2px solid rgb(211, 209, 209);
         border-right: 1px solid rgb(192, 190, 190);
@@ -86,15 +79,18 @@
     
     .solution{
         height: inherit;
+        background-color: rgb(51, 48, 48);
         width: 100%;
-        border-bottom: 4px solid black;
-        margin-bottom: 30px;
+        color: black;
+        margin-top: 20px;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
     }
     
     .question_asked{
         height: inherit;
         width: 95%;
-        margin: 10px;
         padding: 20px;
         display: flex;
         color: white;
@@ -145,29 +141,30 @@
         padding: 10px;
         display: flex;
         align-self: center;
-        flex-direction: column;
-        background-color: white;
+        flex-direction: row;
+        background-color: transparent;
     }
     
     .answer .p{
-        width: 90%;
+        width: 40%;
         height: inherit;
         background-color: rgb(214, 212, 212);
-        font-weight: bold;
+        font-weight: normal;
         margin: 5px;
-        font-size: 10px;
+        font-size: 20px;
         margin-top: 5px;
-        padding: 10px;
+        padding: 7px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        border-radius: 5px;
+        padding-left: 20px;
+        border-radius: 10px;
     }
     
     .answer p div{
         height: 30px;
         width: 30px;
-        min-width: 25px;
+        min-width: 25px; 
         color: white;
         border-radius: 50%; margin: 10px;
         background-color: white;

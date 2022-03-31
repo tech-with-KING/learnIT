@@ -52,20 +52,21 @@ class Solutions  extends Component {
 
 
         return ( 
-        <div className='home_' style={dark?{backgroundColor:'red', color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} >
+        <div className='home_' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} >
           <>
               {nope.map(poise=>{
                   return(
-                        <MathJaxContext version={2} config={config} onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)} className='solution' style={dark?{backgroundColor:coloring.darkbg,zIndex:'-1', color:coloring.lightcl}:{backgroundColor:coloring.lightbg , zIndex:'-1', color:coloring.darkcl}} >
+                    <div className='solution'>
+                        <MathJaxContext version={2} config={config} onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)}   >
                           
                             <MathJax hideUntilTypeset={"first"}  dynamic className='question_asked'>{poise.question}</MathJax> 
-                            <ul className='answer' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
+                            <ul className='answer' >
                               <MathJax  key={poise.index} hideUntilTypeset={"first"}  dynamic className='p'>your choice: {poise.correctc}</MathJax>
                               <MathJax key={poise.index} hideUntilTypeset={"first"}  dynamic className='p'>Answer: {poise.correctc}</MathJax>   
             
                             </ul>
                           </MathJaxContext> 
-                                
+                      </div>         
                         )
                    })
               }

@@ -40,8 +40,9 @@ const NavBar=(props)=>{
                     <Link className='li' to={'./solutions'}><LibraryBooksIcon/> Materials</Link>   
                     <Link className='li' to={'/solutions'}> <CreditScoreIcon/> My Scores</Link>
                     <Link className='li' to={'/solutions'}><LeaderboardIcon/> Leaderboards &#128513; </Link>
-                    <Link className='li' to={'./solutions'}><LibraryBooksIcon/> Materials</Link>
+                    <a className='li' href='https://google.com' target='_blank'><LibraryBooksIcon/> Materials</a>
                     <Link className='li' to={'/solutions'}><LoginIcon /> SingUp/login</Link>
+                    
             </div>
 
             <div className='lowerbar' style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>

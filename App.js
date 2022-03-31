@@ -124,7 +124,12 @@ class App extends Component {
         const {data,option}=this.state
         const stored=window.localStorage.setItem(index,JSON.stringify(option))
 
-           index+=1
+           
+           if (index<Data.length) {
+            index+=1
+           } else {
+               index=index
+           }
            
          if(index < Data.length)
             {
@@ -171,7 +176,7 @@ class App extends Component {
             }
             else
             {
-                return null
+                index=0
             }
         }
             
