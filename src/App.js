@@ -46,7 +46,6 @@ class App extends Component {
       this.setState({option:[...opt]})
      
     }
-     
     render() { 
         const {option,dark,review,submited}=this.state
         
@@ -321,7 +320,8 @@ class App extends Component {
              </div>
             </BrowserRouter>       
          );
-    }
+        }
+        
 }
  
 export default App;
