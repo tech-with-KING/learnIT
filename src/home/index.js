@@ -57,7 +57,7 @@ class Task extends Component {
                                 {option.map(choice=>{
                                       return(
                                         // <p key={choice.id} ><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button>{choice.text }</p>
-                                        <MathJax key={choice.id+index} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
+                                        <MathJax key={choice.id,index} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
                                       )
                                   }) 
                                 }
