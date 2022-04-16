@@ -7,9 +7,7 @@ import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined'
 import CloseIcon from '@mui/icons-material/Close'
 
 class Submit  extends Component {
-    constructor(props) {
-        super(props);
-    }    
+       
     render() { 
         const {dark} =this.props
         const coloring={

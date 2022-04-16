@@ -4,18 +4,16 @@ import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CancelIcon from '@mui/icons-material/Cancel';
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
-import { HomeMax } from '@mui/icons-material';
 import LoginIcon from '@mui/icons-material/Login';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import CreditScoreIcon from '@mui/icons-material/CreditScore';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import {Switch,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import LightModeIcon from '@mui/icons-material/LightMode';
 import HomeIcon from '@mui/icons-material/Home';
 
 const TopBar=(props)=>{
     const [toggle,settoggle]=useState(false)   
-    const {dark} =props
     
     const coloring={
       darkbg:'black',

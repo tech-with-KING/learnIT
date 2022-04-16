@@ -3,8 +3,6 @@ import './index.css'
 import {MathJaxContext,MathJax} from 'better-react-mathjax'
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import { useState } from 'react';
 import {Link} from 'react-router-dom'
 import React, { Component } from 'react';
 
@@ -19,10 +17,8 @@ class Task extends Component {
 
     
     render() { 
-        const {Active}=this.state
-        const {question,option,topic,index}=this.props
+        const {question,option,index}=this.props
         const {dark,handleToggle,handleNext,handlePreve} =this.props
-    
         const coloring={
             darkbg:'black',
             lightbg:'white',
@@ -61,7 +57,7 @@ class Task extends Component {
                                 {option.map(choice=>{
                                       return(
                                         // <p key={choice.id} ><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button>{choice.text }</p>
-                                        <MathJax key={choice.id} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
+                                        <MathJax key={choice.id+index} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
                                       )
                                   }) 
                                 }

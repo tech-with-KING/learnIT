@@ -1,8 +1,7 @@
-
-import './App.css'
-import Task from './home/index'
+import './App.css';
+import Task from './home/index';
 import NavBar from './navbar/nav';
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Data from './Data';
 import React , { Component } from 'react';
 import Solutions from './solutions/index';
@@ -13,12 +12,8 @@ import Homeview from './Homeview/homeview';
 //states
 
 
-let index=0
+var index=0
 class App extends Component {
-    constructor(props) { 
-        super(props);
-        
-    }
     //state
     state = {
         index:index,
@@ -29,7 +24,6 @@ class App extends Component {
     }
     correct=[this.state.correct] 
  handleToggle=(choice,options)=>{
-      let{option}=this.state
       let opt=[...options]
       const index=opt.indexOf(choice)
       opt[index]={...choice}
@@ -77,7 +71,7 @@ class App extends Component {
 
             for (let index = 0; index < Data.length; index++) 
             {
-                const element = JSON.parse(localStorage.getItem(index))
+                const element = JSON.parse(window.localStorage.getItem(index))
                 if(element){
                 const nw= element.filter((ele)=>{
                     if (ele.correct) { return(element)}
@@ -136,7 +130,7 @@ class App extends Component {
         }
     
         const submitmode=()=>{
-            window.localStorage.setItem(index,JSON.stringify(option))
+            window.localStocrage.setItem(index,JSON.stringify(option))
         if(submited){
             this.setState({submited:false})
 
@@ -210,7 +204,7 @@ class App extends Component {
                 if(index>=0)
                 {
                 this.setState({index:index})
-                this.setState({option:JSON.parse(localStorage.getItem(index))}) 
+                this.setState({option:JSON.parse(window.localStorage.getItem(index))}) 
                 console.log('d'+option)
                 }
                 else
@@ -243,12 +237,13 @@ class App extends Component {
                     submit={submitmode}
                     index={Data[index].index}
                     total={Data.length}
-                    done={width()}
+                    done={width}
                     />
                     <Task
                     question={Data[index].question}
                     topic={Data[index].topic}
                     index={Data[index].index}
+                    opt={getquestion}
                     option={option}
                     handleNext={incrementpage}
                     handlePreve={decrementpage}
