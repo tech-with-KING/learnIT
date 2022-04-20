@@ -47,24 +47,19 @@ class Task extends Component {
           
         return ( 
         <div className='home' style={dark?{backgroundColor:'transparent', color:coloring.lightcl}:{backgroundColor:'transparent' , color:coloring.darkcl}} >
-           
-                        <>
-                        
+                        <>          
                             <MathJaxContext version={2} config={config} onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)}   >
                                 <MathJax hideUntilTypeset={"first"} key={index} dynamic className='question'><div>{index}</div>{question}</MathJax> 
                                 
                                 <ul className='options' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
                                 {option.map(choice=>{
                                       return(
-                                        // <p key={choice.id} ><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button>{choice.text }</p>
-                                        <MathJax key={choice.id,index} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
+                                               <MathJax key={choice.id+'ol'+index} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
                                       )
                                   }) 
                                 }
                                 </ul>
                             </MathJaxContext>
-                         
-                         
                         </>
           <div className='d_bar' style={dark?{backgroundColor:'transparent', color:coloring.lightcl}:{backgroundColor:'transparent' , color:coloring.darkcl}}><KeyboardDoubleArrowLeftIcon className='arrowforward' onClick={()=>{handlePreve()}} style={{fontSize:'50px',fontWeight:'bolder',height:'35px',width:'70px'}}/>
            <KeyboardDoubleArrowRightIcon onClick={()=>{handleNext()}} className='arrowforward' style={{fontSize:'50px',fontWeight:'bolder',height:'35px',width:'70px',marginLeft:'10px'}}/>
