@@ -29,6 +29,10 @@
     transition: 0.4s ease;
     text-decoration: none;
     color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
 }
 
 
@@ -50,7 +54,6 @@
     position: fixed;
     top: 2;
     overflow-x: hidden;
-    padding-left: 20px;
     right: 0;  
     cursor: pointer; 
 }  
@@ -174,6 +177,10 @@
     transition: 0.4s ease;
     text-decoration: none;
     color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
 }
 
 
@@ -195,7 +202,6 @@
     position: absolute;
     top: 0;
     overflow-x: hidden;
-    padding-left: 20px;
     right: 0;  
     cursor: pointer; 
 }  

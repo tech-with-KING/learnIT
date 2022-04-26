@@ -60,7 +60,7 @@ class Solutions  extends Component {
                         
                         <MathJaxContext version={2} config={config} onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)}   >
                           
-                            <MathJax hideUntilTypeset={"first"}  dynamic className='question_asked'>{poise.question}</MathJax> 
+                            <MathJax  hideUntilTypeset={"first"}  dynamic className='question_asked'>{poise.question}</MathJax> 
                             <ul className='answer' >
                               <MathJax  hideUntilTypeset={"first"}  dynamic className='p'>your choice: {poise.chosen}
                               </MathJax>
