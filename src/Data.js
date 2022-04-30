@@ -27,9 +27,8 @@ index:2
 },
 
 {
-question:`the  reaction between NO O-2  is given below \n \\(2NO_{(g)}\\) + \\(O_{(g)2}\\) \\(\\forwardarrow \\) \n the reaction is 
-is what order`
-``,
+question:`the  reaction between NO O-2  is given below <br> \\(2NO_{(g)}\\) + \\(O_{(g)2}\\) \\(\\forwardarrow \\) \n the reaction is 
+is what order`,
 topic:'Maths',
 Options:[    
 {text:'True',correct:false,active:false,id:1},
@@ -411,7 +410,7 @@ Options:[
 {text:'True',correct:true,active:false, id:1},
 { text:'False', correct:false, active:false,id:2},
 {text:'All of the above ',correct:false,active:false,id:3},
-{text:'none of the above',correct:false,active:false, id:4 }
+{text:'none he above',correct:false,active:false, id:4 }
 ],
 index:35
 },
