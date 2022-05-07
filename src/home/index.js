@@ -50,11 +50,10 @@ class Task extends Component {
                         <>          
                             <MathJaxContext version={2} config={config} onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)}   >
                                 <MathJax hideUntilTypeset={"first"} key={index} dynamic className='question'><div>{index}</div>{question}</MathJax> 
-                                
-                                <ul className='options' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
+                                                                <ul className='options' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
                                 {option.map(choice=>{
                                       return(
-                                               <MathJax key={choice.id+'ol'+index} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
+                                               <MathJax key={index+'ol'+choice.id} hideUntilTypeset={"first"}  dynamic className='p'><button onClick={()=>{handleToggle(choice,option)}} style={choice.active?{backgroundColor:'green'}:{backgroundColor:'white'}}></button> {choice.text }</MathJax>   
                                       )
                                   }) 
                                 }

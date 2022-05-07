@@ -12,7 +12,7 @@ import Homeview from './Homeview/homeview';
 //states
 
 
-var index=0
+var index=1
 class App extends Component {
     //state
     state = {

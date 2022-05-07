@@ -1,48 +1,47 @@
   const Data=[
     
 {
-    question:"the interval \\((\\infty, 0]\\) is",
+    question:`an 800kg body is being decelerated by a parachute at 2.5m/s2 what is the tension in
+    as shown below`,
     topic:'Math',
     Options:[
-        {text:'Open', correct:false,active:false,id:1},
-        {text:'Closed',correct:false,active:false,id:2},
-        {text:' Half-Open', correct:false, active:false,id:3},
-        {text:'Half-closed',correct:false,active:false,id:4},
-        {text:'Undefined',correct:true,active:false,id:5}
+        {text:'2.0N', correct:false,active:false,id:1},
+        {text:'6.0N',correct:false,active:false,id:2},
+        {text:' 8.0N', correct:false, active:false,id:3},
+        {text:'16N',correct:false,active:false,id:4},
+        {text:'2.5N',correct:true,active:false,id:5}
     ],
     index:1     
 },
 
 {
-question:"\\(\\frac{x-1}{\\log x}\\) is undefined at which point(s)?  ",
+question:`a 15kg block on a horizontal surface has a 100N acting down on it 
+what is the normal reaction on the body`,
 topic:'Maths',
 Options:[
-    {text:'\\(0\\)', correct:false, active:false, id:1 },
-    {text:'\\((-\\infty, 0)\\)', correct:false, active:false, id:2},
-    { text:'\\([-\\infty,0)\\)', correct:false, active:false, id:3 },
-    {text:'\\([-\\infty,0]\\)', correct:true, active:false, id:4 },
+    {text:'100N', correct:false, active:false, id:1 },
+    {text:'250N', correct:false, active:false, id:2},
+    { text:'150N', correct:false, active:false, id:3 },
+    {text:'0N', correct:true, active:false, id:4 },
     {text:"none of the above", correct:false, active:false,id:5 }
 ],
 index:2    
 },
 
 {
-question:`the  reaction between NO O-2  is given below <br> \\(2NO_{(g)}\\) + \\(O_{(g)2}\\) \\(\\forwardarrow \\) \n the reaction is 
-is what order`,
+question:`a 15kg block has a constant acceleration of 2.2m/s2 down a plane inclined at 30deg
+what is the magnitude of the frictional force on the body`,
 topic:'Maths',
 Options:[    
-{text:'True',correct:false,active:false,id:1},
+{text:'50n',correct:false,active:false,id:1},
 {text:'False',correct:true,active:false,id:2},
 ],
 index:3
 },
 
 {
-question:`There are 25 prime numbers less than 100. 
-Let: 
-A := {$x$ |$x$ is a prime number less than 100},
-B := {$y$ | $y$ is a multiple of 3 less than 1000}
-The cardinality of $A\\sim B$ is ?`,
+question:`a 35N force applied on a body at 21deg to the horizontal
+what is the acceleration of the body ?`,
 topic:'Maths',
 Options:[
     {text:' 25',correct:false,active:false,id:1},
@@ -56,7 +55,7 @@ index:4
 
 },
 {
-question:"$\frac{x-1}{\log x}$ is undefined at which point(s)?",
+question:`calculate the average speed of a car travelling from rest and covering a total 1200m  in one minuted`,
 topic:'Maths',
 Options:[
 {text:' 0',correct:false,active:false, id:1},
@@ -67,7 +66,7 @@ Options:[
 index:5    
 },
 {
-question:"In set theory, there is universal set that contains all possible mathematical objects.",
+question:``,
 topic:'Maths',
 Options:[
 {text:'True',correct:false,active:false, id:1},
@@ -78,7 +77,7 @@ Options:[
 index:6 
 },
 {
-question:"Which of the following propositions is false?",
+question:`a stone of mass 2kg is thrown vertically upwrd with a speed of 20m/s . What is the maximum height reached ?`,
 topic:'Maths',
 Options:[
 {text:'$A \subseteq A$',correct:false,active:false, id:1},
@@ -89,10 +88,7 @@ Options:[
 index:7  
 },
 {
-question:`There are 25 prime numbers less than 100. \\
-Let: \\
-A := {$x$ | $x$ is a prime number less than 100}\\
-B := {$y$ | $y$ is a multiple of 3 less than 1000}\\ The cardinality of $A\sim B$ is`,
+question:`find the magnitude of R = 8i -12j and the angle it makes with the horitonzal axis`,
 topic:'Maths',
 Options:[
 {text:'25',correct:false,active:false, id:1},
@@ -103,7 +99,8 @@ Options:[
 index:8     
 },
 {
-question:`Which of the following is not a polynomial?`,
+question:`two forces act on a block of mass 2kg as follows .100N at 170 deg and 100N at 50 deg what is the 
+resultant of the forces`,
 topic:'Maths',
 Options:[
 {text:'$6x^6 - 5$',correct:false,active:false, id:1},
@@ -114,7 +111,7 @@ Options:[
 index:9  
 },
 {
-question:`The next two terms in the sequence below are: 1, 2, 3, 5, ...`,
+question:`A man walks 1km due east and 1km due north what is the displacement or the man ?`,
 topic:'Maths',
 Options:[
 {text:' 7, 11',correct:false,active:false, id:1},
@@ -363,7 +360,7 @@ index:30
 question:``,
 topic:'Maths',
 Options:[
-{text:'$6x^6 - 5$',correct:false,active:false, id:1},
+{text:'',correct:false,active:false, id:1},
 { text:' $ i^2x$', correct:false, active:false,id:2},
 {text:'$-10$',correct:false,active:false,id:3},
 {text:'\\(\\frac{5x^3 + 2x^2 + x}{x}\\) ',correct:true,active:false, id:4 }
