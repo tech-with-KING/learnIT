@@ -13,7 +13,7 @@
     margin-right: 30px;
     right: 0;
 }
-.lighter{
+.light{
     width: 50px;
 }
 
@@ -62,7 +62,7 @@
 .lowerbar{
     width: 100vw;
     height: 85px;
-    border-top:4px solid rgb(133, 131, 131) ;
+    border-top:4px solid rgb(1, 19, 77);
     top: 35px;
     left: 0;
     z-index: 1;

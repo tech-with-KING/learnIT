@@ -8,6 +8,7 @@ import Solutions from './solutions/index';
 import TopBar from './solutions/top';
 import Submit from './submit/submit';
 import Homeview from './Homeview/homeview';
+import Home_Bar from './entry_page/entry';
 
 //states
 
@@ -229,7 +230,7 @@ class App extends Component {
             <div className='App' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
                 
                 <Routes >
-                    <Route exact  path='/' element={submited?
+                    <Route exact  path='/question' element={submited?
                     <>
                     <NavBar 
                     darkmode={darkmode}
@@ -311,6 +312,28 @@ class App extends Component {
                         
                         /> </> 
                          } />
+
+            {/* home_route */}
+                    <Route path='/' element={<>
+                        <TopBar 
+                           dark={dark}
+                           darkmode={darkmode} 
+                        />
+                        <Home_Bar
+                        question={Data[index].question}
+                        key={index}
+                        option={option}   
+                        handleNext={incrementpage}
+                        handlePreve={decrementpage}
+                        handleToggle={this.handleToggle}
+                        dark={dark}
+                        score={getscore}
+                        review={reviewmode}
+                        total={Data.length}
+                        submit={submitmode}
+
+                        /> </>}
+                        />
                 </Routes> 
              </div>
             </BrowserRouter>       

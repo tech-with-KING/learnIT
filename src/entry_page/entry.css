@@ -1,0 +1,119 @@
+/* rgb(34, 185, 102) */
+.home_foo{
+    width: 90%;
+    background-color:transparent;
+    margin-top: 40px;
+    height: inherit;
+    border-left: 3px solid rgb(1, 12, 50);
+    border-right: 3px solid rgb(1, 12, 50);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.center_tab{
+    height: 440px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    min-width: 390px;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 10px;
+    justify-content: center;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
+    width: 50%;
+    background-color:  rgb(1, 12, 50);
+}
+.tick{
+    height: 120px;
+    width: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    border:4px solid rgb(34, 185, 102);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.center p{
+    height: 60px;
+    font-family:monospace ;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    width: 90%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgb(34, 185, 102);
+    font-size: 20px;
+}
+.h_one_{
+    height: 60px;
+    font-family:monospace ;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    width: 90%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(34, 185, 102);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.review{
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(1, 12, 50);
+    color: white;
+}
+
+.line_{
+    height: 7px;
+    border-radius:5px;
+    margin-top: 10px;
+    width: 50%;
+    background-color: rgb(235, 230, 230);
+}
+
+.line_ div{
+    min-height: 100%;
+    width: 70%;
+    border-radius:5px;
+    background-color: rgb(34, 185, 102);
+
+}
+
+.center_error{
+    height: 220px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
+    width: 350px;
+    background-color: white;
+}
+.tick_error{
+    height: 140px;
+    width: 140px;
+    border:4px solid rgb(211, 101, 125);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
