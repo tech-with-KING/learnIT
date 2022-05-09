@@ -48,7 +48,7 @@ class Solutions  extends Component {
           const nope=dope()
     
         return ( 
-        <div className='home_' style={dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} >
+        <div className='home_' style={dark?{backgroundColor:coloring.darkbg, color:coloring.darkcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} >
           <>
               <h2>SOLUTIONS</h2>
               {nope.map(poise=>{

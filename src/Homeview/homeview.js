@@ -36,7 +36,7 @@ class Homeview  extends Component {
     
 
         return ( 
-            <div className='home_fo' style={dark?{borderLeft:coloring.dbdright,borderRight:coloring.dbdleft}:{backgroundColor:coloring.lightbg }}>
+            <div className='home_fo' style={dark?{borderLeft:coloring.dbdright,borderRight:coloring.dbdright}:{backgroundColor:coloring.lightbg,borderLeft:coloring.dbdleft,borderRight:coloring.dbdleft }}>
                 <div className='center' style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>
                      <h2 className='h_two'>Weldone on completing this weeks tests &#128640;</h2>
                     <div className='tick'><CheckOutlinedIcon style={{fontSize:'100px',color:'rgb(34, 185, 102)',fontWeight:'lighter'}} /></div>
