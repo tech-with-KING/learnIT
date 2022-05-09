@@ -13,13 +13,13 @@ import Home_Bar from './entry_page/entry';
 //states
 
 
-var index=1
+var index=0
 class App extends Component {
     //state
     state = {
         index:index,
         review:false,
-        submited:true,
+        submited:false,
         option:Data[index].Options, 
         dark:false,
     }
@@ -131,7 +131,7 @@ class App extends Component {
         }
     
         const submitmode=()=>{
-            window.localStocrage.setItem(index,JSON.stringify(option))
+            localStorage.setItem(index,JSON.stringify(option))
         if(submited){
             this.setState({submited:false})
 
@@ -146,9 +146,9 @@ class App extends Component {
         const  next=()=>
         {
             const {data,option}=this.state
-            const stored=window.localStorage.setItem(index,JSON.stringify(option))
-
+            const stored=window.localStorage.setItem(index,JSON.stringify(option)) 
             
+           
             if (index<Data.length-1) {
                 index+=1
             } else {
@@ -172,7 +172,7 @@ class App extends Component {
             else{
                 return null
                 }
-                        
+               
          }
 
         const width=()=>{
@@ -205,7 +205,14 @@ class App extends Component {
                 if(index>=0)
                 {
                 this.setState({index:index})
-                this.setState({option:JSON.parse(window.localStorage.getItem(index))}) 
+                if (JSON.parse(localStorage.getItem(index)) ){
+                        
+                    this.setState({option:JSON.parse(localStorage.getItem(index))}) 
+                }
+                else{
+                    this.setState({option:Data[index].Options})
+                    
+                }
                 console.log('d'+option)
                 }
                 else

@@ -21,12 +21,12 @@ class Homeview  extends Component {
         const {question,option}=this.props
         const {dark,handleToggle,handleNext,handlePreve} =this.props
         const coloring={
-            darkbg:'black',
+            darkbg:'rgb(1,12,50)',
             lightbg:'white',
             darkcl:'black',
             lightcl:'white',
-            darkbd:'',
-            lightbd:''
+            dbdleft:'3px solid rgb(1, 12, 50)',
+            dbdright:'3px solid white'
         }
         const {review,score,total,reviewed} =this.props
         const percent=()=>{
@@ -36,15 +36,15 @@ class Homeview  extends Component {
     
 
         return ( 
-        <div className='home_fo' style={dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }} >
-          <div className='center_er'>
-              <h2 className='h_one'>Thanks for taking the weekly test &#128640;</h2>
-            <div className='tick'><CheckOutlinedIcon style={{fontSize:'100px',color:'rgb(34, 185, 102)',fontWeight:'lighter'}} /></div>
-            <p>your score: {score()+'/'+total+percent()}</p>
-            <div className='line_'><div className='s_line_'> </div></div>
-            <Link to={"/solutions"} className='review_' onClick={()=>{if(!reviewed){review()}else{}}}>Review Now</Link>
-         </div>
-        </div> 
+            <div className='home_fo' style={dark?{borderLeft:coloring.dbdright,borderRight:coloring.dbdleft}:{backgroundColor:coloring.lightbg }}>
+                <div className='center' style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>
+                     <h2 className='h_two'>Weldone on completing this weeks tests &#128640;</h2>
+                    <div className='tick'><CheckOutlinedIcon style={{fontSize:'100px',color:'rgb(34, 185, 102)',fontWeight:'lighter'}} /></div>
+                   
+                    <p style={{backgroundColor:"transparent"}}>Your Score: {score()+'/'+total}</p>
+                    <Link to={"/solutions"} className='review_' style={dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg ,color:'rgb(1,12,50)'}} onClick={()=>{if(!reviewed){review()}else{}}}>Review Now</Link>
+             </div>
+            </div> 
          );
     }
 }

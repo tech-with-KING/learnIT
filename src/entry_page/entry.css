@@ -17,7 +17,7 @@
     border-radius: 40px;
     display: flex;
     align-items: center;
-    min-width: 390px;
+    min-width: 320px;
     flex-direction: column;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -27,29 +27,33 @@
     width: 50%;
     background-color:  rgb(1, 12, 50);
 }
-.tick{
-    height: 120px;
-    width: 120px;
+.tick_{
+    height: 200px;
+    width: 200px;
     min-width: 120px;
     min-height: 120px;
-    border:4px solid rgb(34, 185, 102);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-.center p{
-    height: 60px;
-    font-family:monospace ;
+    font-size: 20px;
     font-weight: lighter;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    color:  rgb(34, 185, 102);
+    padding-bottom: 30px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.center_tab h3{
+    height: 30px;
+    font-family:monospace ;
+    font-weight: bold;
     letter-spacing: 5px;
     width: 90%;
     padding: 0px;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     color: rgb(34, 185, 102);
     font-size: 20px;
 }
@@ -73,8 +77,13 @@
     border: none;
     width: 150px;
     height: 40px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(1, 12, 50);
     color: white;
 }

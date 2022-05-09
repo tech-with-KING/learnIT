@@ -1,7 +1,6 @@
 /* rgb(34, 185, 102) */
 .home_fo{
     width: 90%;
-    background-color: rgb(216, 211, 211);
     margin-top: 0px;
     height: inherit;
     border-left: 2px solid rgb(211, 209, 209);
@@ -25,31 +24,27 @@
     justify-content: center;
     box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
     width: 50%;
-    background-color: white;
     font-size: 18px;
 }
-.center_er h2{
-    color: rgb(34, 185, 102);
-    font-size: 25px;
 
-}
 .review_{
-    width: 120px;
-    height: 30px;
     text-decoration: none;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
-    border-radius: 15px;
-    background-color: transparent;
-    font-size:18px;
-    color:  rgb(1, 12, 50);;
     font-weight: bold;
-    border: 2px solid  rgb(1, 12, 50);
     text-align: center;
     margin-top: 15px;
-    
+    border: none;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(1, 12, 50);
+    color: white;
 }
+    
+
 .tick{
     height: 120px;
     width: 120px;
@@ -60,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color:transparent;
 }
 .center p{
     height: 60px;
@@ -116,4 +111,20 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+}
+.h_two{
+    height: 60px;
+    font-family:monospace ;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    width: 95%;
+    padding: 0px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(34, 185, 102);
+    font-weight: bold;
+    font-size: 25px;
 }
