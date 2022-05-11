@@ -5,36 +5,38 @@
     as shown below`,
     topic:'Math',
     Options:[
-        {text:'2.0N', correct:false,active:false,id:1},
-        {text:'6.0N',correct:false,active:false,id:2},
-        {text:' 8.0N', correct:false, active:false,id:3},
-        {text:'16N',correct:false,active:false,id:4},
-        {text:'2.5N',correct:true,active:false,id:5}
+        {text:'2.0KN', correct:true,active:false,id:1},
+        {text:'6.0KN',correct:false,active:false,id:2},
+        {text:' 18.0KN', correct:false, active:false,id:3},
+        {text:'16KN',correct:false,active:false,id:4},
+        {text:'2.5KN',correct:false,active:false,id:5}
     ],
     index:1     
 },
 
 {
 question:`a 15kg block on a horizontal surface has a 100N acting down on it 
-what is the normal reaction on the body`,
+what is the normal reaction on the body. take g=9.8m/s2`,
 topic:'Maths',
 Options:[
     {text:'100N', correct:false, active:false, id:1 },
     {text:'250N', correct:false, active:false, id:2},
     { text:'150N', correct:false, active:false, id:3 },
-    {text:'0N', correct:true, active:false, id:4 },
-    {text:"none of the above", correct:false, active:false,id:5 }
+    {text:'0N', correct:false, active:false, id:4 },
+    {text:'274', correct:true, active:false,id:5 }
 ],
 index:2    
 },
 
 {
 question:`a 15kg block has a constant acceleration of 2.2m/s2 down a plane inclined at 30deg
-what is the magnitude of the frictional force on the body`,
+what is the magnitude of the frictional force on the body.take g=9.8m/s2`,
 topic:'Maths',
 Options:[    
-{text:'50n',correct:false,active:false,id:1},
-{text:'False',correct:true,active:false,id:2},
+{text:'50N',correct:false,active:false,id:1},
+{text:'40.5N',correct:true,active:false,id:2},
+{text:'50.5N',correct:false,active:false,id:2},
+{text:'70.5N',correct:false,active:false,id:2}
 ],
 index:3
 },
@@ -80,7 +82,7 @@ index:6
 question:`a stone of mass 2kg is thrown vertically upwrd with a speed of 20m/s . What is the maximum height reached ?`,
 topic:'Maths',
 Options:[
-{text:'$A \subseteq A$',correct:false,active:false, id:1},
+{text:'$A \subseteq,correct:false,active:false, id:1'},
 { text:'$A \supseteq A$', correct:false, active:false,id:2},
 {text:'$A \supset A$',correct:false,active:false,id:3},
 {text:' $A \cap A = A \cup A$',correct:true,active:false, id:4 }
