@@ -23,13 +23,7 @@ class Submit  extends Component {
             return(Math.ceil((score()/total)*100))
         }
 
-    //     <div className='home_foo' style={dark?{borderLeft:coloring.dbdright,borderRight:coloring.dbdright}:{backgroundColor:coloring.lightbg }} >
-    //     <div className='center_tab' style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>
-    //         <h1 className='h_one_'>Hi there &#128640;</h1>
-    //       <div className='tick'><CheckOutlinedIcon style={{fontSize:'100px',color:'rgb(34, 185, 102)',fontWeight:'lighter'}} /></div>
-    //       <button onClick={()=>{clean_up()}} className='review' style={dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg ,color:'rgb(1,12,50)'}}>Start Test</button>
-    //    </div>
-    //   </div> 
+
         return ( 
         <div className='home_f' style={dark?{borderLeft:coloring.dbdright,borderRight:coloring.dbdright}:{backgroundColor:coloring.lightbg }}>
           <div className='center' style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>

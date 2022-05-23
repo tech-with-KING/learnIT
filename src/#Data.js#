@@ -31,7 +31,7 @@ index:2
 {
 question:`a 15kg block has a constant acceleration of 2.2m/s2 down a plane inclined at 30deg
 what is the magnitude of the frictional force on the body.take g=9.8m/s2`,
-topic:'Maths',
+topic:'Physics',
 Options:[    
 {text:'50N',correct:false,active:false,id:0},
 {text:'40.5N',correct:true,active:false,id:1},
@@ -68,7 +68,8 @@ Options:[
 index:5    
 },
 {
-question:``,
+    question:`three particles acts on a body that moves with unchanging velocity
+\textbf{v}=3m/s\textbf{i}=(4m/s)\textbf{j}. Two of the forces are textbf{$F_1$} `,
 topic:'Maths',
 Options:[
 {text:'True',correct:false,active:false, id:0},

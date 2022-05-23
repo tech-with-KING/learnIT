@@ -1,0 +1,129 @@
+
+.top_bar{
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+}
+.ico{
+    position: fixed;
+    margin: 10px;
+    margin-right: 30px;
+    right: 0;
+}
+.lighter{
+    width: 50px;
+}
+
+.menuebar .li:hover {
+    font-weight: bolder;
+    background-color:white;
+    color: black;
+}
+
+.menuebar .li{
+    min-width: 200px;
+    transition: 0.4s ease;
+    text-decoration: none;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+} 
+
+
+
+.menuebar{
+    transition: 0.5s linear;
+    height: 100vh;
+    background:black;
+    color: white;
+    width: 0;
+    max-width: 250px;
+    line-height: 60px;
+    list-style: none;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;  
+    cursor: pointer; 
+} 
+
+
+.lower_bar{
+    width: 100vw;
+    height: 55px;
+    position: fixed;
+    border-top:4px solid rgb(1, 12, 50);
+    top: 40px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+
+
+@media (min-width: 850px){
+
+.ico{
+    position: fixed;
+    margin: 10px;
+    margin-right: 30px;
+    right: 0;
+}
+.light{
+    position: fixed;
+    margin: 10px;
+    margin-right: 30px;
+    left: 0; 
+    background-color: transparent;
+}
+
+.menuebar .li:hover {
+    font-weight: bolder;
+    background-color:white;
+    color: black;
+    
+}
+
+.menuebar .li{
+    min-width: 200px;
+    transition: 0.4s ease;
+    text-decoration: none;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.menuebar{
+    transition: 0.7s linear;
+    height: 100vh;
+    background:black;
+    color: white;
+    width: 0;
+    max-width: 250px;
+    line-height: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    right: 0;  
+    cursor: pointer; 
+}
+}

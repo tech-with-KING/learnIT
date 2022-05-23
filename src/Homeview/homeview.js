@@ -23,7 +23,7 @@ class Homeview  extends Component {
         const coloring={
             darkbg:'rgb(1,12,50)',
             lightbg:'white',
-            darkcl:'black',
+            darkcl:'#000020',
             lightcl:'white',
             dbdleft:'3px solid rgb(1, 12, 50)',
             dbdright:'3px solid white'

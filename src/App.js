@@ -1,6 +1,5 @@
 import './App.css';
 import Task from './home/index';
-import NavBar from './navbar/nav';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Data from './Data';
 import React , { Component } from 'react';
@@ -9,38 +8,51 @@ import TopBar from './solutions/top';
 import Submit from './submit/submit';
 import Homeview from './Homeview/homeview';
 import Home_Bar from './entry_page/entry';
+import Bot from './navbar/menuebar';
 
 //states
 
 
-var index=0
+let index=0
+let me =[]
+const love =Data
+function so() {
+    
+    for (let i = 0; i < love.length;i+=3) {
+        const element = love.slice(i,i+3)
+        me.push(element)
+    }
+    return(me)
+}
+
+const li=[...so()]
+const lo=[...li]
+
+
+
 class App extends Component {
-    //state
     state = {
         index:index,
         review:false,
-        submited:false,
-        option:Data[index].Options, 
+        submited:true,
+        help:lo[index], 
         dark:false,
-    }
-    correct=[this.state.correct] 
- handleToggle=(choice,options)=>{
-      let opt=[...options]
-      const index=opt.indexOf(choice)
-      opt[index]={...choice}
-      if(opt[index].active){
-      opt[index].active=false;
-      
-      this.setState({onptio:opt});
-      }
-      else{
-        opt[index].active=true;
-        
+    };
 
-      }
-      this.setState({option:[...opt]})
-     
+    handleToggle=(no,choice,acti)=>
+    {
+        const {help}=this.state
+        const all_questions=[...help]
+        if(all_questions[no].Options[acti].active){
+            all_questions[no].Options[acti].active=false;
+            this.setState({help:all_questions})
+        }
+        else{
+            all_questions[no].Options[acti].active=true;
+            this.setState({help:all_questions})
+        }
     }
+
     render() { 
         const {option,dark,review,submited}=this.state
         
@@ -48,135 +60,149 @@ class App extends Component {
         const decrementpage=()=>{preve()}
         
         const  getscore =()=>{
-            let br =[]
-        
-            for (let index = 0; index < Data.length; index++) 
-            {
-                const element = JSON.parse(localStorage.getItem(index))
-            if(element){
-                const nwbon= element.filter((elo)=>{
-                    if (elo.active&&elo.correct) {
-                        br.push(element)
-                    }else{
-                        return null
-                    }
-            })
-            }else{
-                br=[]
-            }
-            }
-            return(br.length)
-        }
-        const  getquestion =()=>{
-            let arr=[]
+            // let br =[]
+            // const {help}=this.state
+            // let elem=[]
+            // for (let index = 0; index < li.length; index++) {
 
-            for (let index = 0; index < Data.length; index++) 
-            {
-                const element = JSON.parse(window.localStorage.getItem(index))
-                if(element){
-                const nw= element.filter((ele)=>{
-                    if (ele.correct) { return(element)}
-                });
-
-                let acti=false
-                const nwb= element.filter((elo)=>{
-                    if (elo.active) {
-                        acti=true;
-                        return(element)
-                    }else{
-                        acti=false;
-                    }
-
-                })
-            
-                const at=()=>{
-                    if (nwb[0]) {
-                        return(nwb[0].text);
-                    } else {
-                        return(' ');
-                    }
-                }
-        
-            
-                const questio=Data[index].question
-                const ind=Data[index].index
-                const top=Data[index].topic
-                const data= 
-                {
-                    question:questio,
-                    topic:top,
-                    Options:element,
-                    index:ind,
-                    correctc:nw[0].text,
-                    chosen:at(),
-                }
+            //     try {
+            //         elem = [...elem,...JSON.parse(window.localStorage.getItem(index))];   
+            //     } catch (error) {
+            //         elem = [...elem,...li[index]];
+            //     }
+                 
                 
-                arr.push(data)}
-                else{
-                    const questio=Data[index].question
-                    const ind=Data[index].index
-                    const top=Data[index].topic
-                    const data= 
-                    {
-                    question:questio,
-                    topic:top,
-                    index:ind,
-                    correctc:null,
-                    chosen:null,
-                    }
-                    arr.push(data)
-                }
-                }
-            return(arr)
-        }
+            // }
     
+            // for (let index = 0; index < elem.length; index++) 
+            // {
+                
+            // if(elem){
+            //     const nwbon= elem.filter((elo)=>{
+            //         if (elo.active&&elo.correct) {
+            //             br.push(elem)
+            //         }else{
+            //             return null
+            //         }
+            // })
+            // }else{
+            //     br=[]
+            // }
+
+            // }
+            // return(br.length)
+        }
+
+
+        const  getquestion =()=>{
+            let arr=[]         
+            let elem=[]
+            for (let index = 0; index < li.length; index++) {
+                try {
+                    elem = [...elem,...JSON.parse(window.localStorage.getItem(index))];   
+                } catch (error) {
+                    elem = [...elem,li[index]];
+                }
+            }
+            return (elem);
+            
+        //     if(elem)
+        //     {
+        //     const nw= elem.filter((ele)=>{
+        //         if (ele.correct) { return(elem)}
+        //     });
+
+        //     let acti=false
+        //     const nwb= elem.filter((elo)=>{
+        //         if (elo.active) {
+        //             acti=true;
+        //             return(elem)
+        //         }else{
+        //             acti=false;
+        //         }
+
+        //     })
+        
+        //     const at=()=>{
+        //         if (nwb[0]) {
+        //             return(nwb[0].text);
+        //         } else {
+        //             return(' ');
+        //         }
+        //     }
+    
+        
+        //     const questio=elem[index].question
+        //     const ind=elem[index].index
+        //     const top=elem[index].topic
+        //     const data= 
+        //     {
+        //         question:questio,
+        //         topic:top,
+        //         Options:elem,
+        //         index:ind,
+        //         correctc:nw[0].text,
+        //         chosen:at(),
+        //     }
+            
+        //     arr.push(data)
+        //   }
+        //     else{
+        //         const questio=Data[index].question
+        //         const ind=Data[index].index
+        //         const top=Data[index].topic
+        //         const data= 
+        //         {
+        //         question:questio,
+        //         topic:top,
+        //         index:ind,
+        //         correctc:null,
+        //         chosen:null,
+        //         }
+        //         arr.push(data)
+        //     }
+        //     }
+        // return(arr)
+        // }
+        }
+        getquestion()
+       
         const submitmode=()=>{
-            localStorage.setItem(index,JSON.stringify(option))
-        if(submited){
-            this.setState({submited:false})
-
-        }
-        else{
-            this.setState({submited:true})
-
-        }
+            const {help}=this
+            localStorage.setItem(index,JSON.stringify(help))
+            if(submited){
+                this.setState({submited:false})
+            }
+            else{
+                this.setState({submited:true})
+            }
     
         }
 
         const  next=()=>
         {
-            const {data,option}=this.state
-            const stored=window.localStorage.setItem(index,JSON.stringify(option)) 
-            
-           
-            if (index<Data.length-1) {
+            const {help}=this.state
+            const stored=window.localStorage.setItem(index,JSON.stringify(help)) 
+            if (index<lo.length-1) {
                 index+=1
             } else {
                 index=index
             }
-            
-            if(index < Data.length)
+            if(index < li.length)
                 {
                     if (JSON.parse(localStorage.getItem(index)) ){
                         
-                        this.setState({option:JSON.parse(localStorage.getItem(index))}) 
+                        this.setState({help:JSON.parse(localStorage.getItem(index))}) 
                     }
                     else{
-                        this.setState({option:Data[index].Options})
-                        
+                        this.setState({help:lo[index]})
                     }
-
-                
-                        
                 }
-            else{
-                return null
-                }
-               
-         }
+            else{ return null }      
+        }
 
         const width=()=>{
-            const wit=(Data[index].index/Data.length)*100
+            const wit=(index/lo.length)*100
             return(wit)
         }
 
@@ -199,35 +225,32 @@ class App extends Component {
         }
         
         const  preve=()=>
+        {
+            const {help}=this.state
+            index=index-1 
+            if(index>=0)
             {
-                const {data,option}=this.state
-                index=index-1 
-                if(index>=0)
-                {
-                this.setState({index:index})
-                if (JSON.parse(localStorage.getItem(index)) ){
-                        
-                    this.setState({option:JSON.parse(localStorage.getItem(index))}) 
-                }
-                else{
-                    this.setState({option:Data[index].Options})
+            this.setState({index:index})
+            if (JSON.parse(localStorage.getItem(index)) ){
                     
-                }
-                console.log('d'+option)
-                }
-                else
-                {
-                    index=0
-                }
+                this.setState({help:JSON.parse(localStorage.getItem(index))}) 
+            }
+            else{
+                this.setState({help:li[index]})
+                
+            }
+            console.log('d'+option)
+            }
+            else { index=0 }
         }
     
-        const coloring={
+        const coloring=
+        {
                 darkbg:'black',
                 lightbg:'white',
                 darkcl:'black',
                 lightcl:'white',
-                darkbd:'',
-                lightbd:''
+            
         }
             
       
@@ -239,7 +262,7 @@ class App extends Component {
                 <Routes >
                     <Route exact  path='/question' element={submited?
                     <>
-                    <NavBar 
+                    <Bot 
                     darkmode={darkmode}
                     dark={dark}
                     submit={submitmode}
@@ -248,7 +271,7 @@ class App extends Component {
                     done={width}
                     />
                     <Task
-                    question={Data[index].question}
+                    question={this.state.help}
                     topic={Data[index].topic}
                     index={Data[index].index}
                     opt={getquestion}
@@ -347,7 +370,7 @@ class App extends Component {
          );
         }
         
-}
+};
  
 export default App;
 

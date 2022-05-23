@@ -1,14 +1,11 @@
 
 .home{
-    width: 100%;
-    padding-top: 120px;
+    width: 95%;
+    background-color: rgb(216, 211, 211);
+    margin-top: 90px;
     height: inherit;
-    z-index: 0;
-   
+    border-radius: 3px;
 }
-
-
-
 .question div{
     margin-top: -15px;
     margin-left: -15px;
@@ -36,28 +33,34 @@
 
 .question{
     height: inherit;
-    width: 95%;
+    width: 90%;
     margin: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding:15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:10px;
     display: flex;
     color: black;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(69, 69, 69,0.5);
     border-radius: 10px;
-    font-weight: lighter;
+    font-weight: normal;
     background-color: rgb(218, 216, 216);
-    box-shadow: inset 9px 8px 20px rgba(0,0,0,0.2) ;
-    font-size: 20px;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
+    font-size: 18px;
     letter-spacing: 1px;
+    
+}
+.olk{
+    border: 2px solid #000020;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
     
 }
 .options{
     height: inherit;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -70,8 +73,8 @@
     background-color: rgb(214, 212, 212);
     font-weight: normal;
     margin: 5px;
-    box-shadow: inset 9px 8px 20px rgba(0,0,0,0.1) ;
-    font-size: 20px;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.1) ;
+    font-size: 15px;
     margin-top: 8px;
     padding: 2px;
     display: flex;
@@ -129,7 +132,6 @@
 @media (min-width: 650px){
     .home{
         width: 80%;
-        padding-top: 130px;
         height: inherit;
         z-index: 0;
         border-top: 3px solid transparent;
@@ -142,11 +144,11 @@
         height: inherit;
         width: 95%;
         margin: 10px;
-        font-weight: lighter;
+        font-weight: normal;
         padding: 20px;
         display: flex;
         z-index: -1;
-        color: black;
+        color:white;
         border-radius: 10px;
         font-size: 25px;
     }
@@ -160,7 +162,7 @@
         min-width: 30px;
         min-height: 30px;
         height: 30px;
-        background-color: rgb(249, 249, 249);
+        background-color: #000020;
     }
 
     .options{

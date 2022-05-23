@@ -26,11 +26,11 @@ class Home_Bar  extends Component {
               <h1 className='h_one_' >Hi there &#128640;</h1>
               <h3>Take Preparotory Tests in :</h3>
             <ul className='tick_'  >
-                <li>Biology (fsc111)</li>
-                <li>Chemistry (fsc112)</li>
-                <li>Computer (fsc113)</li>
-                <li>Maths (fsc114)</li>
-                <li>Physics (fsc115)</li>
+                <li>Biology </li>
+                <li>Chemistry</li>
+                <li>Computer</li>
+                <li>Maths </li>
+                <li>Physics</li>
 
             </ul>
             <Link to={"/question"} onClick={()=>{clean_up()}} className='review' style={dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg ,color:'rgb(1,12,50)'}}>Start Test</Link>
