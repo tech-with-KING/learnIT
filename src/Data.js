@@ -3,7 +3,7 @@
 {
     question:`an 800kg body is being decelerated by a parachute at 2.5m/s2 what is the tension in
     as shown below`,
-    topic:'Math',
+    topic:'Physics',
     Options:[
         {text:'2.0KN', correct:true,active:false,id:0},
         {text:'6.0KN',correct:false,active:false,id:1},
@@ -17,7 +17,7 @@
 {
 question:`a 15kg block on a horizontal surface has a 100N acting down on it 
 what is the normal reaction on the body. take g=9.8m/s2`,
-topic:'Maths',
+topic:'Physics',
 Options:[
     {text:'100N', correct:false, active:false, id:0 },
     {text:'250N', correct:false, active:false, id:1},
@@ -29,9 +29,9 @@ index:2
 },
 
 {
-question:`a 15kg block has a constant acceleration of 2.2m/s2 down a plane inclined at 30deg
+question:`a block of mass 15kg  has a constant acceleration of 2.2m/s2 down a plane inclined at 30deg
 what is the magnitude of the frictional force on the body.take g=9.8m/s2`,
-topic:'Maths',
+topic:'Physics',
 Options:[    
 {text:'50N',correct:false,active:false,id:0},
 {text:'40.5N',correct:true,active:false,id:1},
@@ -57,25 +57,26 @@ index:4
 
 },
 {
-question:`calculate the average speed of a car travelling from rest and covering a total 1200m  in one minuted`,
-topic:'Maths',
+question:`calculate the average speed of a car travelling from rest and covering a total 1200m  in one minute`,
+topic:'Physics',
 Options:[
-{text:' 0',correct:false,active:false, id:0},
-{ text:'$(\\-infty, 0)$ ', correct:false, active:false,id:1},
-{text:'$[-\infty,0)$ ',correct:false,active:false,id:2},
-{text:'$[-\infty,0]$',correct:true,active:false, id:3}
+{text:'0.12km/hr',correct:false,active:false, id:0},
+{ text:'72km/hr ', correct:true, active:false,id:1},
+{text:'20km/hr ',correct:false,active:false,id:2},
+{text:'200m/s',correct:false,active:false, id:3}
 ],
 index:5    
 },
 {
-question:``,
-topic:'Maths',
+question:`a ball throw straight downward with non-zero initial speed if it takes the ball 2 s to strike the ground
+`,
+topic:'Physics',
 Options:[
-{text:'True',correct:false,active:false, id:0},
-{ text:'False', correct:true, active:false,id:1},
-{text:'Both',correct:false,active:false,id:2},
-{text:'None',correct:false,active:false, id:3 }
-],
+{text:'31.4m/s',correct:false,active:false, id:0},
+{ text:'-31.4m/s', correct:false, active:false,id:1},
+{text:'-15.7m/s',correct:false,active:false,id:2},
+{text:'15.7m/s',correct:true,active:false, id:3 }
+], 
 index:6 
 },
 {
@@ -258,7 +259,7 @@ Options:[
 index:22
 },
 {
-    question:"the interval \\((\\infty, 0]\\) is",
+    question:"which of the following is not a homogeneou",
     topic:'Math',
     Options:[
         {text:'Open', correct:false,active:false,id:0},

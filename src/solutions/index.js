@@ -44,7 +44,7 @@ class Solutions  extends Component {
             },
             messageStyle: "none"
           };
-          const dope=this.props.dope  
+          const {dope}=this.props
           const nope=dope()
     
         return ( 

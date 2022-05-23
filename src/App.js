@@ -25,8 +25,8 @@ function so() {
     return(me)
 }
 
-const li=[...so()]
-const lo=[...li]
+const lo=[...so()]
+let li=[...lo]
 
 
 
@@ -95,80 +95,68 @@ class App extends Component {
 
 
         const  getquestion =()=>{
-            let arr=[]         
+            let nebo=li
             let elem=[]
-            for (let index = 0; index < li.length; index++) {
-                try {
-                    elem = [...elem,...JSON.parse(window.localStorage.getItem(index))];   
-                } catch (error) {
-                    elem = [...elem,li[index]];
-                }
+            let arr=[]
+            for (let i = 0; i < li.length; i++) {
+                let arr=[JSON.parse(window.localStorage.getItem(i))]
+                let po=[...arr]
+                if (JSON.parse(window.localStorage.getItem(i))) {
+                    elem=[...elem,...JSON.parse(window.localStorage.getItem(i))]
+                } else {
+                    elem=[...elem,...nebo[i]]  
+                } 
             }
-            return (elem);
+
             
-        //     if(elem)
-        //     {
-        //     const nw= elem.filter((ele)=>{
-        //         if (ele.correct) { return(elem)}
-        //     });
-
-        //     let acti=false
-        //     const nwb= elem.filter((elo)=>{
-        //         if (elo.active) {
-        //             acti=true;
-        //             return(elem)
-        //         }else{
-        //             acti=false;
-        //         }
-
-        //     })
-        
-        //     const at=()=>{
-        //         if (nwb[0]) {
-        //             return(nwb[0].text);
-        //         } else {
-        //             return(' ');
-        //         }
-        //     }
+            for (let a = 0; a < elem.length; a++) {
+                const nw= elem[a].Options.filter((ele)=>{
+                    if (ele.correct) { return(elem)}
+                });
     
-        
-        //     const questio=elem[index].question
-        //     const ind=elem[index].index
-        //     const top=elem[index].topic
-        //     const data= 
-        //     {
-        //         question:questio,
-        //         topic:top,
-        //         Options:elem,
-        //         index:ind,
-        //         correctc:nw[0].text,
-        //         chosen:at(),
-        //     }
+                let acti=false
+                const nwb= elem[a].Options.filter((elo)=>{
+                    if (elo.active) {
+                        acti=true;
+                        return(elem)
+                    }else{
+                        acti=false;
+                    }
+    
+                })
             
-        //     arr.push(data)
-        //   }
-        //     else{
-        //         const questio=Data[index].question
-        //         const ind=Data[index].index
-        //         const top=Data[index].topic
-        //         const data= 
-        //         {
-        //         question:questio,
-        //         topic:top,
-        //         index:ind,
-        //         correctc:null,
-        //         chosen:null,
-        //         }
-        //         arr.push(data)
-        //     }
-        //     }
-        // return(arr)
-        // }
+                const at=()=>{
+                    if (nwb[0]) {
+                        return(nwb[0].text);
+                    } else {
+                        return(' ');
+                    }
+                }
+        
+            
+                const questio=elem[a].question
+                const ind=elem[a].index
+                const top=elem[a].topic
+                const data= 
+                {
+                    question:questio,
+                    topic:top,
+                    Options:elem,
+                    index:ind,
+                    correctc:nw[0].text,
+                    chosen:at(),
+                }
+                arr.push(data) 
+            }
+        
+          
+            
+            return(arr);
+    
         }
-        getquestion()
        
         const submitmode=()=>{
-            const {help}=this
+            const {help}=this.state
             localStorage.setItem(index,JSON.stringify(help))
             if(submited){
                 this.setState({submited:false})
