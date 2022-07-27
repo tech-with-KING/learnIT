@@ -6,7 +6,7 @@ import Data from './Data';
 import React , { Component } from 'react';
 import Solutions from './solutions/index';
 import TopBar from './solutions/top';
-import Submit from './submit/submit';
+import{Submit ,Scoreboard} from './submit/submit';
 import Homeview from './Homeview/homeview';
 import Home_Bar from './entry_page/entry';
 
@@ -19,7 +19,7 @@ class App extends Component {
     state = {
         index:index,
         review:false,
-        submited:false,
+        submited:true,
         option:Data[index].Options, 
         dark:false,
     }
@@ -279,7 +279,10 @@ class App extends Component {
 
                     /> </>
 
-                    } />
+							   } />
+		<Route path= "/scoreba" element={
+		    <Scoreboard />
+		} />
                     <Route path='/solutions' element={!review?<>
                         <TopBar 
                            dark={dark}
