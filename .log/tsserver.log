@@ -1,0 +1,44 @@
+Info 0    [09:55:12.889] Starting TS Server
+Info 1    [09:55:12.890] Version: 4.7.4
+Info 2    [09:55:12.890] Arguments: /snap/node/6488/bin/node /usr/local/lib/node_modules/typescript/lib/tsserver.js --logFile /home/cosmic/learnIT/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/b4c4d655e417273aadebb9ae47f7510f/tscancellation*
+Info 3    [09:55:12.890] Platform: linux NodeVersion: 16 CaseSensitive: true
+Info 4    [09:55:12.890] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [09:55:12.918] Format host information updated
+Info 6    [09:55:12.950] Search path: /home/cosmic/learnIT/src
+Info 7    [09:55:12.951] For info: /home/cosmic/learnIT/src/App.js :: No config files found.
+Info 8    [09:55:12.956] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 9    [09:55:35.093] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 22137.34240400046ms
+Info 10   [09:55:35.093] Project '/dev/null/inferredProject1*' (Inferred)
+Info 11   [09:55:35.094] 	Files (901)
+
+Info 12   [09:55:35.094] -----------------------------------------------
+Info 13   [09:55:35.318] AutoImportProviderProject: found 11 root files in 11 dependencies in 219.7389949997887 ms
+Info 14   [09:55:35.320] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 15   [09:55:39.463] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 4142.981842000037ms
+Info 16   [09:55:39.463] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 17   [09:55:39.463] 	Files (1114)
+
+Info 18   [09:55:39.463] -----------------------------------------------
+Info 19   [09:55:39.650] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 20   [09:55:39.850] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: true structureIsReused:: SafeModules Elapsed: 199.96923500020057ms
+Info 21   [09:55:39.851] Project '/dev/null/inferredProject1*' (Inferred)
+Info 22   [09:55:39.851] 	Files (900)
+
+Info 23   [09:55:39.851] -----------------------------------------------
+Info 24   [09:55:39.851] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 25   [09:55:39.851] 	Files (1114)
+
+Info 26   [09:55:39.851] -----------------------------------------------
+Info 27   [09:55:39.879] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 28   [09:55:40.056] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: true structureIsReused:: SafeModules Elapsed: 176.13204700034112ms
+Info 29   [09:55:40.056] Project '/dev/null/inferredProject1*' (Inferred)
+Info 30   [09:55:40.056] 	Files (901)
+
+Info 31   [09:55:40.056] -----------------------------------------------
+Info 32   [09:55:40.056] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 33   [09:55:40.056] 	Files (1114)
+
+Info 34   [09:55:40.056] -----------------------------------------------
+Info 35   [09:55:40.076] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 36   [09:55:40.138] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: false structureIsReused:: Completely Elapsed: 62.296791000291705ms
+Info 37   [09:55:40.138] Different program with same set of files

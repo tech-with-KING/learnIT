@@ -5,7 +5,7 @@ import Data from './Data';
 import React , { Component } from 'react';
 import Solutions from './solutions/index';
 import TopBar from './solutions/top';
-import Submit from './submit/submit';
+import {Submit} from './submit/submit';
 import Homeview from './Homeview/homeview';
 import Home_Bar from './entry_page/entry';
 import Bot from './navbar/menuebar';
