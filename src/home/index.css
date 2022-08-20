@@ -1,4 +1,3 @@
-
 .home{
     width: 95%;
     background-color: rgb(216, 211, 211);
@@ -7,16 +6,19 @@
     border-radius: 3px;
 }
 .question div{
-    margin-top: -15px;
-    margin-left: -15px;
+    background-color: #000020;
     display: flex;
+    color: white;
+    font-weight: bold;
+    min-width: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     align-items: center;
     justify-content: center;
     border-radius: 50% ;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgb(192, 190, 190) ;
-    background-color: white;
+    width: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 20px;
 }
 
 
@@ -33,7 +35,8 @@
 
 .question{
     height: inherit;
-    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 92%;
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -46,15 +49,16 @@
     font-weight: normal;
     background-color: rgb(218, 216, 216);
     box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
     
 }
 .olk{
-    border: 2px solid #000020;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 15px;
+    padding: 5px;
     
 }
 .options{
@@ -68,10 +72,11 @@
 }
 
 .options .p{
-    width: 85%;
+    width: 90%;
     height: inherit;
     background-color: rgb(214, 212, 212);
-    font-weight: normal;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
     margin: 5px;
     box-shadow: 2px 6px 10px rgba(0,0,0,0.1) ;
     font-size: 15px;
@@ -85,9 +90,9 @@
 }
 
 .options .p button{
-    height: 20px;
-    width: 20px;
-    min-width: 25px;
+    height: 15px;
+    width: 15px;
+    min-width: 15px;
     border: none;
     border-radius: 50%; margin: 10px;
 }
@@ -144,13 +149,14 @@
         height: inherit;
         width: 95%;
         margin: 10px;
-        font-weight: normal;
+        font-weight: lighter;
+	font-family: 'Courier New', Courier, monospace;
         padding: 20px;
         display: flex;
         z-index: -1;
-        color:white;
+        color:black;
         border-radius: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
     .question div{
         margin-top: -15px;
@@ -158,10 +164,12 @@
         border-radius: 50%;
         width: 30px;
         font-size: 1rem;
+	font-family: 'Courier New', Courier, monospace;;
+	color: white;
         border:1px solid black;
-        min-width: 30px;
-        min-height: 30px;
-        height: 30px;
+        min-width: 20px;
+        min-height: 20px;
+        height: 20px;
         background-color: #000020;
     }
 
@@ -172,20 +180,21 @@
         display: flex;
         align-self: center;
         flex-direction: column;
-        background-color: rgb(8, 8, 8);
+	background-color: rgb(8, 8, 8);
     }
     
     .options .p{
         width: 90%;
+	font-family: 'Courier New', Courier, monospace;
         height: inherit;
         background-color: rgb(214, 212, 212);
-        border: 1px solid rgb(69, 69, 69,0.5);
         font-weight: lighter;
         margin: 5px;
         color: black;
-        font-size: 25px;
+        font-size: 18px;
         margin-top: 8px;
         padding: 5px;
+	font-weight: lighter;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -196,8 +205,8 @@
         height: 20px;
         width: 20px;
         border: none;
-        min-width: 20px;
-        min-height: 20px;
+        min-width: 15px;
+        min-height: 15px;
         border-radius: 50%; margin: 10px;
         background-color: white;
     }

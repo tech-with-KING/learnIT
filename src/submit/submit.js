@@ -139,10 +139,6 @@ class Submit  extends Component {
           <div className='center' style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>
 		<h1 className='h_one_'>Great Job &#128640;</h1>
 		<Scoreboard />
-            <div className='tick'><CheckOutlinedIcon style={{fontSize:'100px',color:'rgb(34, 185, 102)',fontWeight:'lighter'}} /></div>
-            <p style={{backgroundColor:"transparent"}}>{percent()+'%'}</p>
-            <div className='line_'><div className='s_line_' style={{width:`${percent()}%`}}> </div></div>
-            <p style={{backgroundColor:"transparent"}}>Your Score:{score()+"/"+total}</p>
             <button onClick={()=>{review(); submit();}} className='review' tyle={dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg ,color:'rgb(1,12,50)'}}>Review Now</button>
          </div>
         </div> 

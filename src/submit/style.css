@@ -22,7 +22,7 @@
     margin: 10px;
     justify-content: center;
     box-shadow: 2px 6px 10px rgba(0,0,0,0.2) ;
-    width: 50%;
+    width: inherit;
     background-color: white;
 }
 .tick{
