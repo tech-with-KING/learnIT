@@ -1,0 +1,54 @@
+[14:24:18.363] Global cache location '/home/cosmic/.cache/typescript/4.7', safe file path '/usr/local/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/local/lib/node_modules/typescript/lib/typesMap.json
+[14:24:18.364] Processing cache location '/home/cosmic/.cache/typescript/4.7'
+[14:24:18.364] Trying to find '/home/cosmic/.cache/typescript/4.7/package.json'...
+[14:24:18.505] Loaded content of '/home/cosmic/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.605"},"devDependencies":{"@types/body-parser":"^1.19.2","@types/express":"^4.17.13","@types/merge-descriptors":"^1.0.1","@types/multer":"^1.4.7","@types/nodemon":"^1.19.2","@types/react":"^18.0.15","@types/react-dom":"^18.0.6","@types/serve-static":"^1.13.10","@types/styled-components":"^5.1.25"}}
+[14:24:18.506] Loaded content of '/home/cosmic/.cache/typescript/4.7/package-lock.json'
+[14:24:18.564] Adding entry into typings cache: 'body-parser' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/body-parser/index.d.ts'
+[14:24:18.567] Adding entry into typings cache: 'express' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/express/index.d.ts'
+[14:24:18.586] Adding entry into typings cache: 'merge-descriptors' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/merge-descriptors/index.d.ts'
+[14:24:18.607] Adding entry into typings cache: 'multer' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/multer/index.d.ts'
+[14:24:18.610] Adding entry into typings cache: 'nodemon' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/nodemon/index.d.ts'
+[14:24:18.655] Adding entry into typings cache: 'react' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/react/index.d.ts'
+[14:24:18.659] Adding entry into typings cache: 'react-dom' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/react-dom/index.d.ts'
+[14:24:18.662] Adding entry into typings cache: 'serve-static' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/serve-static/index.d.ts'
+[14:24:18.712] Adding entry into typings cache: 'styled-components' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/styled-components/index.d.ts'
+[14:24:18.713] Finished processing cache location '/home/cosmic/.cache/typescript/4.7'
+[14:24:18.713] Process id: 30389
+[14:24:18.713] NPM location: /snap/node/6619/bin/npm (explicit '--npmLocation' not  provided)
+[14:24:18.713] validateDefaultNpmLocation: false
+[14:24:18.713] Npm config file: /home/cosmic/.cache/typescript/4.7/package.json
+[14:24:18.713] Updating types-registry npm package...
+[14:24:18.713] Exec: /snap/node/6619/bin/npm install --ignore-scripts types-registry@latest
+[14:25:29.888]     Succeeded. stdout:
+[14:25:29.888] Updated types-registry npm package
+[14:25:29.960] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/cosmic/learnIT/src/solutions/top.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/cosmic/learnIT/src/solutions","kind":"discover"}
+[14:25:29.977] Loaded safelist from types map file '/usr/local/lib/node_modules/typescript/lib/typesMap.json'
+[14:25:29.977] Explicitly included types: []
+[14:25:29.978] Inferred typings from unresolved imports: []
+[14:25:29.978] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/cosmic/learnIT/src/solutions/bower_components","/home/cosmic/learnIT/src/solutions/node_modules"]}
+[14:25:29.979] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/cosmic/learnIT/src/solutions/bower_components","/home/cosmic/learnIT/src/solutions/node_modules"]}
+[14:25:29.979] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/solutions/bower_components
+[14:25:29.979] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/solutions/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[14:25:29.981] Elapsed:: 1.2736430019140244ms DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/solutions/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[14:25:29.981] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/solutions/node_modules
+[14:25:29.981] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/solutions/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[14:25:29.981] Elapsed:: 0.09130299836397171ms DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/solutions/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[14:25:29.981] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[14:25:29.981] Response has been sent.
+[14:25:29.981] No new typings were requested as a result of typings discovery
+[14:25:29.981] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/cosmic/learnIT/src/navbar/timer.js","/home/cosmic/learnIT/src/navbar/menuebar.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/cosmic/learnIT/src/navbar","kind":"discover"}
+[14:25:29.982] Explicitly included types: []
+[14:25:29.982] Inferred typings from unresolved imports: []
+[14:25:29.982] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/cosmic/learnIT/src/navbar/bower_components","/home/cosmic/learnIT/src/navbar/node_modules"]}
+[14:25:29.982] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/cosmic/learnIT/src/navbar/bower_components","/home/cosmic/learnIT/src/navbar/node_modules"]}
+[14:25:29.982] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/navbar/bower_components
+[14:25:29.982] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/navbar/bower_components 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+[14:25:29.982] Elapsed:: 0.09547699987888336ms DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/navbar/bower_components 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+[14:25:29.982] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/navbar/node_modules
+[14:25:29.982] DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/navbar/node_modules 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+[14:25:29.982] Elapsed:: 0.08373600244522095ms DirectoryWatcher:: Added:: WatchInfo: /home/cosmic/learnIT/src/navbar/node_modules 1 undefined Project: /dev/null/inferredProject2* watcher already invoked: false
+[14:25:29.982] Sending response:
+    {"projectName":"/dev/null/inferredProject2*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[14:25:29.983] Response has been sent.
+[14:25:29.983] No new typings were requested as a result of typings discovery
