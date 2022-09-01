@@ -79,7 +79,7 @@ class Task extends Component {
           <div className='d_bar' style={dark?{backgroundColor:'transparent', color:coloring.lightcl}:{backgroundColor:'transparent' , color:coloring.darkcl}}>
             <KeyboardDoubleArrowLeftIcon className='arrowforward' onClick={()=>{handlePreve()}} style={{fontSize:'50px',fontWeight:'bolder',height:'35px',width:'70px'}}/>
            <KeyboardDoubleArrowRightIcon onClick={()=>{handleNext()}} className='arrowforward' style={{fontSize:'50px',fontWeight:'bolder',height:'35px',width:'70px',marginLeft:'10px'}}/>
-          <Link to={"/solutions"} className='submit' style={dark?{backgroundColor:coloring.lightbg, color:coloring.darkcl}:{backgroundColor:coloring.darkbg, color:coloring.lightcl}} onClick={()=>{submit()}}>submit</Link>
+          <Link to={"/solutions"} className='submit' >submit</Link>
           </div>
         </div> 
 

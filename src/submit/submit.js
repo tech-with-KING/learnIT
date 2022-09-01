@@ -1,9 +1,9 @@
 import './style.css'
 import './scoreboard.css'
 import React, { Component } from 'react';
-import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined'
 
 class Scoreboard extends Component {
+    
     state = {
 
 	players: [
@@ -36,10 +36,23 @@ class Scoreboard extends Component {
     this.setState(this.state);
   }
 
-
-  render() {
+    
+    render() {
+                const {dark} =this.props
+        const coloring={
+            darkbg:'rgb(1,12,50)',
+            lightbg:'white',
+            darkcl:'black',
+            lightcl:'white',
+            dbdleft:'3px solid rgb(1,12,50)',
+            dbdright:'3px solid white'
+        }
+        const {review,score,total,submit} =this.props
+        const percent=()=>{
+            return(Math.ceil((score()/total)*100))
+	}
     return (
-      <div className="scoreboard">
+      <div className="scoreboard"  style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>
         <Header players={this.state.players} />
         <div className="players">
           {this.state.players.map(function(player, index) {
@@ -84,7 +97,7 @@ function Stats(props) {
           <td>{playerCount}</td>
         </tr>
         <tr>
-          <td>Total Score:</td>
+          <td>Total:</td>
           <td>{totalPoints}</td>
         </tr>
       </tbody>
@@ -136,7 +149,7 @@ class Submit  extends Component {
 	}
         return ( 
         <div className='home_f' style={dark?{borderLeft:coloring.dbdright,borderRight:coloring.dbdright}:{backgroundColor:coloring.lightbg }}>
-          <div className='center' style={!dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg }}>
+          <div className='center'>
 		<h1 className='h_one_'>Great Job &#128640;</h1>
 		<Scoreboard />
             <button onClick={()=>{review(); submit();}} className='review' tyle={dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg ,color:'rgb(1,12,50)'}}>Review Now</button>

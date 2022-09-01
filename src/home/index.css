@@ -109,16 +109,17 @@
 }
 
 .arrowforward{
-    background-color: rgb(70, 69, 69);
+    background-color: #00001a;
     height: 30%;
     color: white;
     border-radius: 5px;
 } 
 
 .submit{
-    background-color: white;
-    height: 45px;
-    width: 120px;
+    background-color:#006622;
+    color: white;
+    height: 40px;
+    width: 110px;
     margin-left: 30px;
     border: none;
     letter-spacing: 5px;
@@ -229,8 +230,8 @@
     }
 
     .submit{
-        background-color: white;
         height: 40px;
+        background-color: rgb(34,185,102);
         width: 120px;
         position: relative;
         margin-left: 40px;

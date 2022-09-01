@@ -45,7 +45,7 @@ const Bot=(props)=>{
             </div>
 
             <div className='lower_bar' style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
-                <div style={props.dark ?{backgroundColor:'black', color:'white'}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}><h1>LEARNIT</h1><div style={props.dark?{backgroundColor:coloring.lightbg}:{backgroundColor:coloring.darkbg}} className='circle' ><div style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}} className='s_circle'>{props.index+'/'+props.total}</div></div></div>
+                <div style={props.dark ?{backgroundColor:'black', color:'white'}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}><h1>LEARNIT</h1><div style={props.dark?{backgroundColor:coloring.lightbg}:{backgroundColor:coloring.darkbg}} className='circle' ><div style={props.dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg}} className='s_circle'>{props.index+'/'+props.total}</div></div></div>
                 <div className='counter' style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
                     <div className='timer'><AccessTimeIcon style={props.dark?{fontSize:'30px',color:coloring.lightbg,fontWeight:'bold'}:{fontSize:'30px',color:coloring.darkbg,fontWeight:'bold'}}/><div style={{marginTop:'15px',marginLeft:'0px'}}><CountDown minutes={30} submite={props.submit} review={props.review}/> </div></div>
                     <div className='line'><div className='s_line' ></div></div>
