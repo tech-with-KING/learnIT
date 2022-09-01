@@ -47,7 +47,7 @@ const Bot=(props)=>{
             </div>
 
             <div className='lower_bar'style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg ,color:coloring.darkcl}}>
-            <div className='head'><EmojiObjectsIcon style={{fontSize:"25px", Color:"blue"}} /><BoltSharp color="success" style={{fontSize:"25px"}}/><div className='circle' ><div className='s_circle'>{props.index+'/'+props.total}</div></div></div>
+            <div className='head'><EmojiObjectsIcon style={{fontSize:"25px", Color:"#ffff66"}} /><BoltSharp color="success" style={{fontSize:"25px"}}/><div className='circle' ><div className='s_circle'>{props.index+'/'+props.total}</div></div></div>
                 <div className='counter'>
             <div className='timer'><div><CountDown minutes={30} submite={props.submit} review={props.review}/></div></div>
                 </div>
