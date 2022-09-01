@@ -5,7 +5,6 @@ import CountDown from './timer';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import LoginIcon from '@mui/icons-material/Login';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import CreditScoreIcon from '@mui/icons-material/CreditScore';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -44,11 +43,10 @@ const Bot=(props)=>{
                     <Link to={""} className='li' ><InfoTwoToneIcon style={{marginRight:'5px'}} />About</Link>  
             </div>
 
-            <div className='lower_bar' style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
-                <div style={props.dark ?{backgroundColor:'black', color:'white'}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}><h1>LEARNIT</h1><div style={props.dark?{backgroundColor:coloring.lightbg}:{backgroundColor:coloring.darkbg}} className='circle' ><div style={props.dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg}} className='s_circle'>{props.index+'/'+props.total}</div></div></div>
-                <div className='counter' style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl}:{backgroundColor:coloring.lightbg , color:coloring.darkcl}}>
-                    <div className='timer'><AccessTimeIcon style={props.dark?{fontSize:'30px',color:coloring.lightbg,fontWeight:'bold'}:{fontSize:'30px',color:coloring.darkbg,fontWeight:'bold'}}/><div style={{marginTop:'15px',marginLeft:'0px'}}><CountDown minutes={30} submite={props.submit} review={props.review}/> </div></div>
-                    <div className='line'><div className='s_line' ></div></div>
+            <div className='lower_bar'style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg ,color:coloring.darkcl}}>
+                <div className='head'><div className='circle' ><div style={props.dark?{backgroundColor:coloring.darkbg}:{backgroundColor:coloring.lightbg}} className='s_circle'>{props.index+'/'+props.total}</div></div></div>
+                <div className='counter'>
+            <div className='timer'><div><CountDown minutes={30} submite={props.submit} review={props.review}/></div></div>
                 </div>
                 </div>
         </div>

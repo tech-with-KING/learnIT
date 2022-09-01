@@ -20,7 +20,7 @@ const CountDown = ({minutes = 0, seconds = 0,submite }) => {
     });
   
     return (
-      <div >
+      <div xo>
         <p>{`${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`}</p>
       </div>
     );
