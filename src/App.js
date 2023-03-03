@@ -9,6 +9,8 @@ import {Submit} from './submit/submit';
 import Homeview from './Homeview/homeview';
 import Home_Bar from './entry_page/entry';
 import Bot from './navbar/menuebar';
+import CourseCard from './components/coursecontents/contents';
+import OutlineCard from './components/coursecontents/outline';
 
 //states
 
@@ -330,7 +332,9 @@ class App extends Component {
                         
                         /> </> 
                          } />
-
+            {/* coursecontents */}
+                         <Route path='/course_contents' element={<><CourseCard /> </>}></Route>
+                         <Route path='/course_outlines' element={<><OutlineCard /> </>}></Route>
             {/* home_route */}
                     <Route path='/' element={<>
                         <TopBar 

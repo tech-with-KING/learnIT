@@ -38,8 +38,10 @@ const TopBar=(props)=>{
             </div>
             <div onClick={()=>{props.darkmode()}} className='light' style={props.dark?{backgroundColor:'transparent', color:coloring.lightcl,zIndex:'2'} : {backgroundColor:'transparent', color:coloring.darkcl}}>{props.dark?<LightModeIcon style={{fontSize:'30px',color:'white',backgroundColor:'black',fontWeight:'bold',zIndex:'1'}}/>:<DarkModeIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} />}</div>
             <div className='menuebar' style={ toggle?{width:'60%'}:{width:'0',paddingLeft:'0'}}  >  
+            
                   <Link className='li' to={'/'}> <HomeIcon style={{marginRight:'5px'}}/>Home</Link>   
-                    <a className='li' href='https://drive.google.com/drive/folders/1q9ahRAe-SFAogpu43f0JeCTfNumFIcnN?usp=sharing' ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Materials</a>
+                  <Link className='li' to={'/course_outlines'} ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Course Outlines</Link>
+                    
                     <Link className='li' to={'/solutions'}> <CreditScoreIcon style={{marginRight:'5px'}}/> My Scores</Link>
                     <a className='li' href='' ><LibraryBooksIcon style={{marginRight:'5px'}}/>Course Outline</a>
                     <Link to={""} className='li' ><InfoTwoToneIcon style={{marginRight:'5px'}} />About</Link>  

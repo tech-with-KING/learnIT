@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.card_header_container{
+  padding-top: 20px;
+  background-color: #000020;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card_header{
+    color: white;
+    margin-bottom: 0px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(250, 250, 250,0.1);
+    font-weight: normal;
+    max-width: 70vw;
+    min-width: 500px;
+}
+
+.card_container{
+  height: inherit;
+  min-height: 60vh;
+  margin: 20px auto;
+  background-color: #000020;
+  padding: 20px 10px;
+  display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 1.4rem;
+  width: 100vw;
+
+}
+.card{
+  margin-top: 0px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  border-radius: 10px;
+  padding: 0;
+  max-width: 420px;
+  background-color: rgb(250, 250, 250,0.1);
+  
+}
+
+.image{
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.card__body_ {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.course_description{
+  width: 100%;
+  padding-left: 20px;
+  margin: 0;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course_description ul{
+  height: 100%;
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drive_link{
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  background-color: #000020;
+  color: white;
+  padding: 0 10px;
+  font-size: 20px;
+
+  
+}

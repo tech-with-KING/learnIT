@@ -57,7 +57,7 @@ index:4
 
 },
 {
-question:`calculate the average speed of a car travelling from rest and covering a total 1200m  in one minute`,
+question:`calculate the average speed of a car travelling from rest and covering a total distace of 1200m  in one minute`,
 topic:'Physics',
 Options:[
 {text:'0.12km/hr',correct:false,active:false, id:0},
@@ -68,7 +68,7 @@ Options:[
 index:5    
 },
 {
-question:`a ball throw straight downward with non-zero initial speed if it takes the ball 2 s to strike the ground
+question:`a ball thrown straight downward with non-zero initial speed if it takes the ball 2s to strike the ground what is the velocity of the ball
 `,
 topic:'Physics',
 Options:[
@@ -80,8 +80,8 @@ Options:[
 index:6 
 },
 {
-question:`a stone of mass 2kg is thrown vertically upwrd with a speed of 20m/s . What is the maximum height reached ?`,
-topic:'Maths',
+question:`a stone of mass 2kg is thrown vertically upward with a speed of 20m/s . What is the maximum height reached ?`,
+topic:'Physics',
 Options:[
 {text:'$A \subseteq,correct:false,active:false, id:0'},
 { text:'$A \supseteq A$', correct:false, active:false,id:1},
@@ -92,7 +92,7 @@ index:7
 },
 {
 question:`find the magnitude of R = 8i -12j and the angle it makes with the horitonzal axis`,
-topic:'Maths',
+topic:'Physics',
 Options:[
 {text:'25',correct:false,active:false, id:0},
 { text:'24', correct:true, active:false,id:1},

@@ -40,14 +40,14 @@ const Bot=(props)=>{
             <div onClick={()=>{props.darkmode()}} className='light' style={props.dark?{backgroundColor:'transparent', color:coloring.lightcl,zIndex:'2'} : {backgroundColor:'transparent', color:coloring.darkcl}}>{props.dark?<LightModeIcon style={{fontSize:'30px',color:'white',backgroundColor:'black',fontWeight:'bold',zIndex:'1'}}/>:<DarkModeIcon style={{fontSize:'30px',fontWeight:'bold',transition:"0.5s ease-in"}} />}</div>
             <div className='menuebar' style={ toggle?{width:'60%'}:{width:'0',paddingLeft:'0'}}  >  
                   <Link className='li' to={'/'}> <HomeIcon style={{marginRight:'5px'}}/>Home</Link>   
-                    <a className='li' href='https://drive.google.com/drive/folders/1q9ahRAe-SFAogpu43f0JeCTfNumFIcnN?usp=sharing' ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Materials</a>
+                    <Link className='li' to={'/course_outlines'} ><MenuBookTwoToneIcon style={{marginRight:'5px'}}/> Course Outlines</Link>
                     <Link className='li' to={'/solutions'}> <CreditScoreIcon style={{marginRight:'5px'}}/> My Scores</Link>
-                    <a className='li' href='' ><LibraryBooksIcon style={{marginRight:'5px'}}/>Course Outline</a>
+                    <Link className='li'to={'/course_contents'} ><LibraryBooksIcon style={{marginRight:'5px'}}/>Course Contents</Link>
                     <Link to={""} className='li' ><InfoTwoToneIcon style={{marginRight:'5px'}} />About</Link>  
             </div>
 
             <div className='lower_bar'style={props.dark?{backgroundColor:coloring.darkbg, color:coloring.lightcl} : {backgroundColor:coloring.lightbg ,color:coloring.darkcl}}>
-            <div className='head'><EmojiObjectsIcon style={{fontSize:"25px", Color:"#ffff66"}} /><BoltSharp color="success" style={{fontSize:"25px"}}/><div className='circle' ><div className='s_circle'>{props.index+'/'+props.total}</div></div></div>
+            <div className='head'><EmojiObjectsIcon style={{fontSize:"25px", Color:"#ffff66"}} /><BoltSharp style={{fontSize:"25px", Color:"yellow"}}/><div className='circle' ><div className='s_circle'>{props.index+'/'+props.total}</div></div></div>
                 <div className='counter'>
             <div className='timer'><div><CountDown minutes={30} submite={props.submit} review={props.review}/></div></div>
                 </div>
