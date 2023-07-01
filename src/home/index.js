@@ -5,6 +5,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import {Link} from 'react-router-dom'
 import React, { Component } from 'react';
+import Circle from '../navbar/circle';
 
 class Task extends Component {
     constructor(props) {
@@ -80,7 +81,11 @@ class Task extends Component {
             <KeyboardDoubleArrowLeftIcon className='arrowforward' onClick={()=>{handlePreve()}} style={{fontSize:'50px',fontWeight:'bolder',height:'35px',width:'70px'}}/>
            <KeyboardDoubleArrowRightIcon onClick={()=>{handleNext()}} className='arrowforward' style={{fontSize:'50px',fontWeight:'bolder',height:'35px',width:'70px',marginLeft:'10px'}}/>
           <Link to={"/solutions"} className='submit' >submit</Link>
+          
           </div>
+        
+          <Circle />
+                          
         </div> 
 
          );

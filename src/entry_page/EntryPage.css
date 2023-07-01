@@ -1,0 +1,43 @@
+.entry-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.entry-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.letter-animation {
+  display: inline-block;
+  animation: reveal-letter 1s forwards;
+  opacity: 0;
+}
+
+@keyframes reveal-letter {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.entry-description {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+

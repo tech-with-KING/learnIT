@@ -1,0 +1,55 @@
+[21:25:45.351] Global cache location '/home/cosmic/.cache/typescript/4.7', safe file path '/usr/local/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/local/lib/node_modules/typescript/lib/typesMap.json
+[21:25:45.351] Processing cache location '/home/cosmic/.cache/typescript/4.7'
+[21:25:45.352] Trying to find '/home/cosmic/.cache/typescript/4.7/package.json'...
+[21:25:45.636] Loaded content of '/home/cosmic/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.613"},"devDependencies":{"@types/bcrypt":"^5.0.0","@types/body-parser":"^1.19.2","@types/co":"^4.6.3","@types/cors":"^2.8.12","@types/express":"^4.17.14","@types/merge-descriptors":"^1.0.1","@types/multer":"^1.4.7","@types/nodemon":"^1.19.2","@types/nopt":"^3.0.29","@types/npmlog":"^4.1.4","@types/react":"^18.0.15","@types/react-dom":"^18.0.6","@types/serve-static":"^1.13.10","@types/styled-components":"^5.1.25"}}
+[21:25:45.637] Loaded content of '/home/cosmic/.cache/typescript/4.7/package-lock.json'
+[21:25:45.898] Adding entry into typings cache: 'bcrypt' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/bcrypt/index.d.ts'
+[21:25:45.995] Adding entry into typings cache: 'body-parser' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/body-parser/index.d.ts'
+[21:25:46.046] Adding entry into typings cache: 'co' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/co/index.d.ts'
+[21:25:46.197] Adding entry into typings cache: 'cors' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/cors/index.d.ts'
+[21:25:46.498] Adding entry into typings cache: 'express' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/express/index.d.ts'
+[21:25:46.609] Adding entry into typings cache: 'merge-descriptors' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/merge-descriptors/index.d.ts'
+[21:25:46.674] Adding entry into typings cache: 'multer' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/multer/index.d.ts'
+[21:25:46.743] Adding entry into typings cache: 'nodemon' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/nodemon/index.d.ts'
+[21:25:46.872] Adding entry into typings cache: 'nopt' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/nopt/index.d.ts'
+[21:25:46.887] Adding entry into typings cache: 'npmlog' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/npmlog/index.d.ts'
+[21:25:47.128] Adding entry into typings cache: 'react' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/react/index.d.ts'
+[21:25:47.350] Adding entry into typings cache: 'react-dom' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/react-dom/index.d.ts'
+[21:25:47.645] Adding entry into typings cache: 'serve-static' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/serve-static/index.d.ts'
+[21:25:47.692] Adding entry into typings cache: 'styled-components' => '/home/cosmic/.cache/typescript/4.7/node_modules/@types/styled-components/index.d.ts'
+[21:25:47.692] Finished processing cache location '/home/cosmic/.cache/typescript/4.7'
+[21:25:47.693] Process id: 13155
+[21:25:47.693] NPM location: /usr/local/bin/npm (explicit '--npmLocation' not  provided)
+[21:25:47.693] validateDefaultNpmLocation: false
+[21:25:47.693] Npm config file: /home/cosmic/.cache/typescript/4.7/package.json
+[21:25:47.693] Updating types-registry npm package...
+[21:25:47.693] Exec: /usr/local/bin/npm install --ignore-scripts types-registry@latest
+[21:27:06.507]     Failed. stdout:
+    stderr:
+    npm notice 
+    npm notice New major version of npm available! 8.15.0 -> 9.6.2
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.6.2>
+npm notice Run `npm install -g npm@9.6.2` to update!
+npm notice 
+npm ERR! code ENOTEMPTY
+npm ERR! syscall rename
+npm ERR! path /home/cosmic/.cache/typescript/4.7/node_modules/types-registry
+npm ERR! dest /home/cosmic/.cache/typescript/4.7/node_modules/.types-registry-4khi6kno
+npm ERR! errno -39
+npm ERR! ENOTEMPTY: directory not empty, rename '/home/cosmic/.cache/typescript/4.7/node_modules/types-registry' -> '/home/cosmic/.cache/typescript/4.7/node_modules/.types-registry-4khi6kno'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/cosmic/.npm/_logs/2023-05-11T20_25_48_014Z-debug-0.log
+
+[21:27:06.507] Updated types-registry npm package
+[21:27:06.621] Error when loading types registry file '/home/cosmic/.cache/typescript/4.7/node_modules/types-registry/index.json': Unexpected end of JSON input, SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at loadTypesRegistryFile (/usr/local/lib/node_modules/typescript/lib/typingsInstaller.js:126326:40)
+    at new NodeTypingsInstaller (/usr/local/lib/node_modules/typescript/lib/typingsInstaller.js:126374:43)
+    at /usr/local/lib/node_modules/typescript/lib/typingsInstaller.js:126487:29
+    at /usr/local/lib/node_modules/typescript/lib/typingsInstaller.js:126494:11
+    at /usr/local/lib/node_modules/typescript/lib/typingsInstaller.js:126495:7
+    at Object.<anonymous> (/usr/local/lib/node_modules/typescript/lib/typingsInstaller.js:126496:3)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)

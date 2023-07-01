@@ -1,0 +1,47 @@
+.quiz-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 80vh;
+    width: 100vw;
+    background-color: #000020;
+  }
+  
+  .course-tiles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .course-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: #000020;
+  }
+  
+  .course-icon {
+    font-size: 80px;
+  }
+  
+  .course-name {
+    font-size: 20;
+    margin-top: 10px;
+  }
+  
+  .take-quiz-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #000020;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
